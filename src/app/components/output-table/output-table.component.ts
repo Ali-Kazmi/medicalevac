@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {LandingZones} from "../../LandingZoneData";
 
 @Component({
   selector: 'app-output-table',
@@ -6,8 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./output-table.component.css']
 })
 export class OutputTableComponent implements OnInit {
-
-  constructor() { }
+  headers;
+  lz;
+  constructor() { 
+    this.headers = ["id", "name", "elevation", "slopeRoll", "slopePitch","lat","long"];
+    this.lz=LandingZones;
+  }
 
   ngOnInit(): void {
   }

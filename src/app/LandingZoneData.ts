@@ -1,5 +1,6 @@
 export const LandingZones = [
     {
+        id:1,
         name: 'Big Stamp',
         elevation:3175,
         slopeRoll: 9, 
@@ -8,6 +9,7 @@ export const LandingZones = [
         long:-84.071333
     },
     {
+        id:2,
         name: 'Chestnut',
         elevation:3000,
         slopeRoll: null, 
@@ -16,6 +18,7 @@ export const LandingZones = [
         long:-84.017650
     },
     {
+        id:3,
         name: 'Deerlick',
         elevation:3150,
         slopeRoll: 5, 
@@ -24,6 +27,7 @@ export const LandingZones = [
         long:-84.160267
     },
     {
+        id:4,
         name: 'Donovan',
         elevation:1850,
         slopeRoll: -10, 
@@ -32,6 +36,7 @@ export const LandingZones = [
         long:-84.123367
     },
     {
+        id:5,
         name: 'Edmonson',
         elevation:2578,
         slopeRoll: 11, 
@@ -40,6 +45,7 @@ export const LandingZones = [
         long:-84.128583
     },
     {
+        id:6,
         name: 'Finney',
         elevation:2900,
         slopeRoll: 2.3, 
@@ -48,6 +54,7 @@ export const LandingZones = [
         long:-84.032717
     },
     {
+        id:7,
         name: 'Flores',
         elevation:2650,
         slopeRoll: -8, 
@@ -56,6 +63,7 @@ export const LandingZones = [
         long:-84.118950
     },
     {
+        id:8,
         name: 'Frying Pan',
         elevation:3200,
         slopeRoll: 0, 
@@ -64,6 +72,7 @@ export const LandingZones = [
         long:-84.155567
     },
     {
+        id:9,
         name: 'Garrett Farms',
         elevation:2325,
         slopeRoll: 0, 
@@ -72,6 +81,7 @@ export const LandingZones = [
         long:-84.052483
     },
     {
+        id:9,
         name: 'Gold',
         elevation:3225,
         slopeRoll: 10, 
@@ -80,6 +90,7 @@ export const LandingZones = [
         long:-84.175567
     },
     {
+        id:10,
         name: 'Hawk Mountain',
         elevation:3425,
         slopeRoll: 5, 
@@ -88,6 +99,7 @@ export const LandingZones = [
         long:-84.138383
     },
     {
+        id:11,
         name: 'Johnson',
         elevation:3040,
         slopeRoll: -3, 
