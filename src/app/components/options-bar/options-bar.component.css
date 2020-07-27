@@ -1,0 +1,13 @@
+.nav-link{
+    margin: auto;
+    width: 50%;
+    border: 3px solid blue;
+    padding: 10px;
+}
+
+.dropdown-menu,.dropdown-item{
+    margin: auto;
+    width: 50%;
+    border: 1px solid blue;
+    padding: 10px;
+}
