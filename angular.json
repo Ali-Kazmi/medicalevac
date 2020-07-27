@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "medevacwebsite"
+    }
+  },
+  "defaultProject": "medevacwebsite",
+  "cli": {
+    "analytics": "c64036b0-b10c-472c-baa1-c2ba0341a5c1"
+  }
 }
