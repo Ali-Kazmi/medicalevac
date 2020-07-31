@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { OptionsBarComponent } from './options-bar.component';
+import { ClosestComponent } from './closest.component';
 
-describe('OptionsBarComponent', () => {
-  let component: OptionsBarComponent;
-  let fixture: ComponentFixture<OptionsBarComponent>;
+describe('ClosestComponent', () => {
+  let component: ClosestComponent;
+  let fixture: ComponentFixture<ClosestComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ OptionsBarComponent ]
+      declarations: [ ClosestComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(OptionsBarComponent);
+    fixture = TestBed.createComponent(ClosestComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

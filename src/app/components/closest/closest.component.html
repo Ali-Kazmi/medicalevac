@@ -1,0 +1,19 @@
+<button (click)="toggleCollapse()" class="btn btn-primary"> Show Closest</button>
+
+<div *ngIf="!isCollapsed">
+
+<table class="table">
+    <thead>
+        <th *ngFor = "let column of headers">
+            {{column}}
+          </th>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let row of lz">
+            <td *ngFor = "let column of headers">
+              {{row[column]}}
+            </td>
+          </tr>
+    </tbody>
+  </table>
+</div>
