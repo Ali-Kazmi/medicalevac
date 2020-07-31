@@ -1,3 +1,6 @@
+<button (click)="toggleCollapse()" class="btn btn-primary"> Show All</button>
+<div *ngIf="!isCollapsed">
+
 <table class="table">
     <thead>
         <th *ngFor = "let column of headers">
@@ -12,3 +15,4 @@
           </tr>
     </tbody>
   </table>
+</div>
