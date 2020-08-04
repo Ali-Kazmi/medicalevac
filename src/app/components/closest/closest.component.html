@@ -1,3 +1,15 @@
+<div class="closestBox">
+  
+<p>
+
+
+</p>
+<label for="lat">Lat</label><br>
+<input id="lat" class="form-control" [(ngModel)]="lat" type="text"><br>
+
+<label for="Long">Long</label><br>
+<input id="long" class="form-control" [(ngModel)]="long" type="text"><br>
+
 <button (click)="toggleCollapse()" class="btn btn-primary"> Show Closest</button>
 
 <div *ngIf="!isCollapsed">
@@ -16,4 +28,7 @@
           </tr>
     </tbody>
   </table>
+</div>
+
+
 </div>
