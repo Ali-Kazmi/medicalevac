@@ -1,9 +1,4 @@
-<div class="closestBox">
-  
-<p>
-
-
-</p>
+<div class="closestBox"> 
 <label for="lat">Lat</label><br>
 <input id="lat" class="form-control" [(ngModel)]="lat" type="text"><br>
 
@@ -21,14 +16,19 @@
           </th>
     </thead>
     <tbody>
-        <tr *ngFor = "let row of lz">
+        <tr>
             <td *ngFor = "let column of headers">
-              {{row[column]}}
+              {{lz[closest+1][column]}}
             </td>
           </tr>
     </tbody>
   </table>
+  <p>
+    Distance: {{closestDist}} Miles
+  
+  </p>
 </div>
+
 
 
 </div>
