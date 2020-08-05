@@ -28,6 +28,7 @@ export class MgrsOptionsComponent implements OnInit {
   //2) do the same thing we did in closest! 
   //3) return the result, and its mgrs representation
   //to make this easy, use a library: proj4js/mgrs
+  //example test coordinate: 18SUJ7082315291
   toggleCollapse(){
     this.isCollapsed=!this.isCollapsed; 
     var latlong=mgrs.toPoint(this.mgrsval); //an array with the lat long, from the library 
@@ -36,8 +37,7 @@ export class MgrsOptionsComponent implements OnInit {
     var closestIndex=0;
     var closestDistance=1000000000; 
     for (i = 0; i < this.lz.length; i++) {
-      var thisDistance=this.distance(latlong[0],latlong[1], this.lz[i].lat,this.lz[i].long,'M'); //to bug fix: is this a 0 or a 1????
-      var thisDistance=0;
+      var thisDistance=this.distance(latlong[0],latlong[1], this.lz[i].lat,this.lz[i].long,'M'); 
       if(thisDistance<closestDistance){
         closestDistance=thisDistance; 
         closestIndex=i;
