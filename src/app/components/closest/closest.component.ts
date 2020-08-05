@@ -27,7 +27,7 @@ export class ClosestComponent implements OnInit {
   //0) validate input is lat long 
   //1) go through the lz (landing zones) and calculate the distance between this point and that one. 
   //2) store the minimum as we do step 1, changing it if we find something closer. 
-  //3) 
+  //3) return the index and that distance at the end by setting the class variables to this value. This is then used in the html to display results. 
   toggleCollapse(){
     this.isCollapsed=!this.isCollapsed; 
 

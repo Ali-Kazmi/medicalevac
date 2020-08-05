@@ -28,11 +28,12 @@ export class MgrsOptionsComponent implements OnInit {
   //2) do the same thing we did in closest! 
   //3) return the result, and its mgrs representation
   //to make this easy, use a library: proj4js/mgrs
-  //example test coordinate: 18SUJ7082315291
+  //example test coordinate: 18SUJ7082315291. To test the entire system, I took this coordinate, translated it to lat long
+  //then i ran it on the latlong. Both returned the same closest landing zone (donovan). This shows correctness. 
   toggleCollapse(){
     this.isCollapsed=!this.isCollapsed; 
     var latlong=mgrs.toPoint(this.mgrsval); //an array with the lat long, from the library 
-    
+    console.log(latlong)
     var i;
     var closestIndex=0;
     var closestDistance=1000000000; 
