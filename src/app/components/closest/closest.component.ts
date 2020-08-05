@@ -35,7 +35,7 @@ export class ClosestComponent implements OnInit {
     var closestIndex=0;
     var closestDistance=1000000000; 
     for (i = 0; i < this.lz.length; i++) {
-      var thisDistance=this.distance(this.lat,this.long, this.lz[i].lat,this.lz[0].long,'M');
+      var thisDistance=this.distance(this.lat,this.long, this.lz[i].lat,this.lz[i].long,'M');
       if(thisDistance<closestDistance){
         closestDistance=thisDistance; 
         closestIndex=i;

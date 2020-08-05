@@ -36,7 +36,7 @@ export class MgrsOptionsComponent implements OnInit {
     var closestIndex=0;
     var closestDistance=1000000000; 
     for (i = 0; i < this.lz.length; i++) {
-      var thisDistance=this.distance(latlong[0],latlong[1], this.lz[i].lat,this.lz[0].long,'M'); //to bug fix: is this a 0 or a 1????
+      var thisDistance=this.distance(latlong[0],latlong[1], this.lz[i].lat,this.lz[i].long,'M'); //to bug fix: is this a 0 or a 1????
       var thisDistance=0;
       if(thisDistance<closestDistance){
         closestDistance=thisDistance; 
