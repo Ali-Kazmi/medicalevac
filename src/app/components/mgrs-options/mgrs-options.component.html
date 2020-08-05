@@ -1,0 +1,31 @@
+<div class="mgrsBox"> 
+    <label for="mgrs">MGRS</label><br>
+    <input id="mgrs" class="form-control" [(ngModel)]="mgrs" type="text"><br>
+  
+    <button (click)="toggleCollapse()" class="btn btn-primary"> Show Closest</button>
+    
+    <div *ngIf="!isCollapsed">
+    
+    <table class="table">
+        <thead>
+            <th *ngFor = "let column of headers">
+                {{column}}
+              </th>
+        </thead>
+        <tbody>
+            <tr>
+                <td *ngFor = "let column of headers">
+                  {{lz[closest+1][column]}}
+                </td>
+              </tr>
+        </tbody>
+      </table>
+      <p>
+        Distance: {{closestDist}} Miles
+      
+      </p>
+    </div>
+    
+    
+    
+    </div>
