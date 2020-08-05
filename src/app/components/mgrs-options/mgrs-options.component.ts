@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {LandingZones} from "../../LandingZoneData";
+import mgrs from "../mgrs-master/dist/mgrs.js";
+
 @Component({
   selector: 'app-mgrs-options',
   templateUrl: './mgrs-options.component.html',
@@ -8,7 +10,7 @@ import {LandingZones} from "../../LandingZoneData";
 export class MgrsOptionsComponent implements OnInit {
   headers;
   lz;
-  mgrs;
+  mgrsval;
   closest;
   closestDist;
   isCollapsed : boolean=true; 
@@ -21,19 +23,21 @@ export class MgrsOptionsComponent implements OnInit {
   }
 
 
-  //for the closest component, on the collapse I want it to do the following: 
-  //0) validate input is lat long 
-  //1) go through the lz (landing zones) and calculate the distance between this point and that one. 
-  //2) store the minimum as we do step 1, changing it if we find something closer. 
-  //3) 
+  //steps: 
+  //1) convert the mgrs input to lat long 
+  //2) do the same thing we did in closest! 
+  //3) return the result, and its mgrs representation
+  //to make this easy, use a library: proj4js/mgrs
   toggleCollapse(){
     this.isCollapsed=!this.isCollapsed; 
-
+    var latlong=mgrs.toPoint(this.mgrsval); //an array with the lat long, from the library 
+    
     var i;
     var closestIndex=0;
     var closestDistance=1000000000; 
     for (i = 0; i < this.lz.length; i++) {
-      var thisDistance=this.distance(this.lat,this.long, this.lz[i].lat,this.lz[0].long,'M');
+      var thisDistance=this.distance(latlong[0],latlong[1], this.lz[i].lat,this.lz[0].long,'M'); //to bug fix: is this a 0 or a 1????
+      var thisDistance=0;
       if(thisDistance<closestDistance){
         closestDistance=thisDistance; 
         closestIndex=i;

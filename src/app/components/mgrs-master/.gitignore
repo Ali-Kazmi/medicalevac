@@ -1,0 +1,9 @@
+/.vscode/
+/geotrans3.7/
+*~
+node_modules
+.DS_STORE
+coverage
+.nyc_output
+*.csv
+*.tgz
