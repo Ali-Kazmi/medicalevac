@@ -1,34 +1,34 @@
-<div class="closestBox"> 
-<label for="lat">Lat</label><br>
-<input id="lat" class="form-control" [(ngModel)]="lat" type="text"><br>
-
-<label for="Long">Long</label><br>
-<input id="long" class="form-control" [(ngModel)]="long" type="text"><br>
-
-<button (click)="toggleCollapse()" class="btn btn-primary"> Show Closest</button>
-
-<div *ngIf="!isCollapsed">
-
-<table class="table">
-    <thead>
-        <th *ngFor = "let column of headers">
-            {{column}}
-          </th>
-    </thead>
-    <tbody>
-        <tr>
-            <td *ngFor = "let column of headers">
-              {{lz[closest][column]}}
-            </td>
-          </tr>
-    </tbody>
-  </table>
-  <p>
-    Distance: {{closestDist}} Miles
+<div class="card p-4"> 
+  <label for="lat">Lat</label><br>
+  <input id="lat" class="form-control" [(ngModel)]="lat" type="text"><br>
   
-  </p>
-</div>
-
-
-
-</div>
+  <label for="Long">Long</label><br>
+  <input id="long" class="form-control mb-2" [(ngModel)]="long" type="text"><br>
+  
+  <button (click)="toggleCollapse()" class="btn btn-primary ml-auto"> Show Closest</button>
+  
+  <div *ngIf="!isCollapsed">
+  
+  <table class="table">
+      <thead>
+          <th *ngFor = "let column of headers">
+              {{column}}
+            </th>
+      </thead>
+      <tbody>
+          <tr>
+              <td *ngFor = "let column of headers">
+                {{lz[closest][column]}}
+              </td>
+            </tr>
+      </tbody>
+    </table>
+    <p>
+      Distance: {{closestDist}} Miles
+    
+    </p>
+  </div>
+  
+  
+  
+  </div>
