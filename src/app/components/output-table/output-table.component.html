@@ -1,4 +1,4 @@
-<button (click)="toggleCollapse()" class="btn btn-primary"> Show All</button>
+<button (click)="toggleCollapse()" class="btn btn-primary"> Show All (with map)</button>
 <div *ngIf="!isCollapsed">
 
 <table class="table">
@@ -16,3 +16,5 @@
     </tbody>
   </table>
 </div>
+
+<div id="map" [style.display]="!isCollapsed ? '' : 'none'"></div>
