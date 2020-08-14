@@ -1,6 +1,6 @@
 # Medevac website
 
-This project was created during my internship at GTRI (georgia tech research institute). Due to covid it was a 5 week internship, but I learned angular and built this website! It helps helicopter pilots have an easier time planning which landing zone to use by recommending a spot to land. It also conveniently plots these on a map. Supports both lat/long and MGRS. The data is real and of the North Georgia Ranger School. 
+This project was created during my internship at GTRI (georgia tech research institute). Due to covid it was a 5 week internship, but I learned Angular and built this website! It helps helicopter pilots have an easier time planning which landing zone to use by recommending a spot to land. It also conveniently plots these on a map. Supports both lat/long and MGRS. The data is real and from the North Georgia Ranger School. 
 
 Some pictures:
 ![Medevac1](/medevac1.png)
