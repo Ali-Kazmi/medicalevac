@@ -1,6 +1,6 @@
 # Medevacwebsite
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.4.
+This project was created during my internship at GTRI (georgia tech research institute). Due to covid it was only a 5 week internship, but I learned angular and built this website! It helps helicopter pilots have an easier time planning which landing zone to use by recommending a spot to land. It also conveniently plots these on a map. Supports both lat/long and MGRS. 
 
 ## Development server
 
